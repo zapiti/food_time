@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Foodtime</string>
+    <string name="main_activity_title_home_diary">Diario</string>
+    <string name="main_activity_title_dashboard">Dashboard</string>
+    <string name="main_activity_title_configuration">Configuraçòes</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_food_adapter">imagem da comida</string>
+    <string name="title_add_fodd">Titulo da refeição</string>
+    <string name="horary_add_food">Horario da refeição</string>
+    <string name="adicione">adicionar</string>
+    <string name="calory">Calorias</string>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/adapter_image_food"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                <ImageView
+                        android:id="@+id/adapter_diary_image_food"
+                        android:layout_width="60dp"
+                           android:layout_height="60dp"
+                           android:src="@drawable/ic_settings_black"
+                           android:contentDescription="@string/image_food_adapter"/>
+
+            </com.google.android.material.card.MaterialCardView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/adapter_container_layout_main_diary"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/adapter_image_food"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp">
+                <TextView
+                        android:id="@+id/adapter_title_diary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Almoço"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                />
+
+                <TextView
+                        android:id="@+id/adapter_status_diary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Proximo"
+                        android:layout_margin="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/adapter_title_diary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/adapter_horary_diary"
+                        app:layout_constraintBottom_toTopOf="@+id/adapter_calory_diary"
+
+                        android:textSize="16sp"
+                />
+
+                <TextView
+                        android:id="@+id/adapter_horary_diary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="12:00"
+                       android:layout_marginTop="8dp"
+                        android:layout_marginEnd="16dp"
+
+                        app:layout_constraintTop_toBottomOf="@+id/adapter_title_diary"
+
+                        app:layout_constraintBottom_toTopOf="@+id/adapter_calory_diary"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:textStyle="bold"
+
+                        android:textSize="16sp"
+                />
+
+                <TextView
+                        android:id="@+id/adapter_calory_diary"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Calorias:5000"
+
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintTop_toBottomOf="@+id/adapter_horary_diary"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

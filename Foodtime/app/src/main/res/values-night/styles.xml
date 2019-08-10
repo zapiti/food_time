@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="BaseTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:statusBarColor">@color/toolbar_color</item>
+    </style>
+
+
+
+
+    <!-- CardView -->
+    <style name="icon_card_view">
+        <item name="android:tint">@color/color_background</item>
+    </style>
+
+    <style name="title_card_view">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_background</item>
+    </style>
+
+    <style name="text_normal_card_view">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_background</item>
+    </style>
+    <style name="text_small_card_view">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_background</item>
+    </style>
+
+
+    <!-- toolbar -->
+    <style name="toolbar_food" parent="BaseTheme">
+        <item name="actionMenuTextColor">@color/color_background</item>
+        <item name="android:textColor">@color/color_background</item>
+        <item name="android:textColorPrimary">@color/color_background</item>
+        <item name="android:textColorHint">@color/color_background</item>
+        <item name="colorControlNormal">@color/color_background</item>
+        <item name="android:drawableTint"  tools:targetApi="m">@color/color_background</item>
+    </style>
+
+    <!-- switch -->
+    <style name="switch_order" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorSwitchThumbNormal">@color/color_background
+        </item>
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme">
+        <item name="android:statusBarColor">@color/toolbar_color</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+
+
+
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/color_background</item>
+    </style>
+
+
+
+
+</resources>
